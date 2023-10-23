@@ -1,4 +1,4 @@
-Instance: AUMedicareNumber
+Instance: MedicareNumber
 InstanceOf: NamingSystem
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
@@ -16,7 +16,7 @@ Usage: #definition
 * responsible = "Services Australia"
 * type = $v2-0203#MC "Patient's Medicare Number"
 * type.text = "Medicare Card Number"
-* description = "Medicare Card Number. A Medicare card is provided to individuals who are enrolled in Medicare. This identifier system may be used for the 10 digit Medicare card number or the 11 digit number that includes the line number (the individual reference number (IRN))."
+* description = "Medicare Card Number. A Medicare card is provided to individuals who are enrolled in Medicare. This identifier system may be used for the 10 digit Medicare card number or the 11 digit number that includes the individual reference number (IRN)."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Australian Federal Government funded medical insurance patient identification"
 * uniqueId[0].type = #uri
