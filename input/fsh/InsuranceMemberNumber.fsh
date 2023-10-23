@@ -2,12 +2,12 @@ Instance: AUInsuranceMemberNumber
 InstanceOf: NamingSystem
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
-* extension[=].valueUri = "http://hl7.org.au/fhir/StructureDefinition/au-insurancemembernumber"
+* extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/au-insurancemembernumber"
 * name = "AuInsuranceMemberNumber"
 * status = #draft
 * kind = #identifier
 * date = "2018-01-01"
-* publisher = "Australian Health funds"
+* publisher = "Australian Health Insurance funds"
 * contact.name = "HL7 Australia"
 * contact.telecom.system = #email
 * contact.telecom.value = "secretary@hl7.com.au"
