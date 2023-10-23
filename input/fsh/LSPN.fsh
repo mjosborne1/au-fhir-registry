@@ -1,12 +1,12 @@
-Instance: DVANumber
+Instance: LSPN
 InstanceOf: NamingSystem
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
-* extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/dva"
-* name = "DVANumber"
+* extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/lspn"
+* name = "LSPN"
 * status = #draft
 * kind = #identifier
-* date = "2018-02-21"
+* date = "2020-09-22"
 * publisher = "HL7 Australia"
 * contact.name = "HL7 Australia"
 * contact.telecom.system = #email
@@ -14,15 +14,15 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#MI "Military ID Number"
-* type.text = "Australian Department of Veterans’ Affairs (DVA) file number"
-* description = "Australian Department of Veterans’ Affairs (DVA) file number. An individual’s state-based Department of Veterans’ Affairs (DVA) File number as displayed on a Veteran Card."
+* type = $v2-0203#LSPN "Location Specific Practice Number"
+* type.text = "Location Specific Practice Number"
+* description = "Location Specific Practice Number. A Location Specific Practice Number (LSPN) is an identifier assigned to a specific location by Services Australia under the Medicare program and identifies an accredited practice site that provides diagnostic imaging and radiation oncology services."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
-* usage = "Australian Department of Veterans’ Affairs (DVA) patient identification."
+* usage = "Diagnostic imaging location identification."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "http://ns.electronichealth.net.au/id/dva"
+* uniqueId[=].value = "http://ns.electronichealth.net.au/id/lspn"
 * uniqueId[=].comment = "This value is used for Australian FHIR Implementations."
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #oid
-* uniqueId[=].value = "2.16.840.1.113883.3.879.339127"
+* uniqueId[=].value = "1.2.36.1.2001.1005.48"
 * uniqueId[=].comment = "This value is used in Australian CDA documents and OID based systems."

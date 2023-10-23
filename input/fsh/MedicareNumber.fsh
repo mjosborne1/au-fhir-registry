@@ -21,7 +21,7 @@ Usage: #definition
 * usage = "Australian Federal Government funded medical insurance patient identification"
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/medicare-number"
-* uniqueId[=].comment = "This is an example value for Australian FHIR Implementations."
+* uniqueId[=].comment = "This value is used for Australian FHIR Implementations."
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #oid
 * uniqueId[=].value = "1.2.36.1.5001.1.0.7"
@@ -29,4 +29,3 @@ Usage: #definition
 * uniqueId[+].type = #oid
 * uniqueId[=].value = "1.2.36.1.5001.1.0.7.1"
 * uniqueId[=].comment = "This value is used for the 10 digit Medicare numbers in Australian CDA documents and OID based systems."
-
