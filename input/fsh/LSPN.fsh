@@ -1,5 +1,6 @@
 Instance: LSPN
 InstanceOf: NamingSystem
+Title: "Location Specific Practice Number"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/lspn"

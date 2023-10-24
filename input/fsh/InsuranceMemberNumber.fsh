@@ -1,5 +1,6 @@
 Instance: InsuranceMemberNumber
 InstanceOf: NamingSystem
+Title: "Health Insurance Member Number"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/au-insurancemembernumber"

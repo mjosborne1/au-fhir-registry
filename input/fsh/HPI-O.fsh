@@ -1,5 +1,6 @@
 Instance: HPI-O
 InstanceOf: NamingSystem
+Title: "Australian Healthcare Provider Identifier - Organisation (HPI-O)"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o"

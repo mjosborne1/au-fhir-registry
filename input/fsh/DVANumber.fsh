@@ -1,9 +1,10 @@
 Instance: DVANumber
 InstanceOf: NamingSystem
+Title: "Australian Department of Veterans’ Affairs (DVA) file number"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/dva"
-* name = "DVANumber"
+* name = "AustalianDVAFileNumber"
 * status = #draft
 * kind = #identifier
 * date = "2018-02-21"

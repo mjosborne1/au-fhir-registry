@@ -1,9 +1,10 @@
 Instance: CentrelinkCustomerReferenceNumber
 InstanceOf: NamingSystem
+Title: "Centrelink Customer Reference Number"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
-* name = "CentrelinkCustomerReferenceNumber"
+* name = "AustralianCRN"
 * status = #draft
 * kind = #identifier
 * date = "2018-02-21"
