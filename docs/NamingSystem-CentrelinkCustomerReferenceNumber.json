@@ -1,0 +1,60 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "CentrelinkCustomerReferenceNumber",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem CentrelinkCustomerReferenceNumber</b></p><a name=\"CentrelinkCustomerReferenceNumber\"> </a><a name=\"hcCentrelinkCustomerReferenceNumber\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://ns.electronichealth.net.au/fhir/NamingSystem/crn</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>AustralianCRN</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Centrelink Customer Reference Number (also referred to as unique identifier number (UIN) in the Centrelink Confirmation eServices (CCeS)). An identifier assigned to an individual by Centrelink for the purposes of identifying people (and organisations) eligible for specific services, including some public health care services, such as oral health services. This number may appear on a Health Care Card, Commonwealth Seniors Health Card, or Pensioner Concession Card.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 AU Publisher</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://ns.electronichealth.net.au/id/centrelink-customer-reference-number</td><td>true</td><td>This value is used for Australian FHIR Implementations.</td></tr><tr><td>OID</td><td>2.16.840.1.113883.3.879.369274</td><td/><td>This value is used in Australian CDA documents and OID based systems.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.0"
+  }],
+  "name" : "AustralianCRN",
+  "status" : "draft",
+  "kind" : "identifier",
+  "date" : "2018-02-21",
+  "publisher" : "HL7 AU Publisher",
+  "contact" : [{
+    "name" : "HL7 AU Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
+    }]
+  }],
+  "responsible" : "Services Australia",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+      "code" : "PEN",
+      "display" : "Pension Number"
+    }],
+    "text" : "Centrelink Customer Reference Number"
+  },
+  "description" : "Centrelink Customer Reference Number (also referred to as unique identifier number (UIN) in the Centrelink Confirmation eServices (CCeS)). An identifier assigned to an individual by Centrelink for the purposes of identifying people (and organisations) eligible for specific services, including some public health care services, such as oral health services. This number may appear on a Health Care Card, Commonwealth Seniors Health Card, or Pensioner Concession Card.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "AU"
+    }]
+  }],
+  "usage" : "Australian Centrelink Customer identification.",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://ns.electronichealth.net.au/id/centrelink-customer-reference-number",
+    "preferred" : true,
+    "comment" : "This value is used for Australian FHIR Implementations."
+  },
+  {
+    "type" : "oid",
+    "value" : "2.16.840.1.113883.3.879.369274",
+    "comment" : "This value is used in Australian CDA documents and OID based systems."
+  }]
+}

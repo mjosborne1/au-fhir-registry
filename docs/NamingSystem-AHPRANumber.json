@@ -1,0 +1,55 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "AHPRANumber",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem AHPRANumber</b></p><a name=\"AHPRANumber\"> </a><a name=\"hcAHPRANumber\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.org.au/id/ahpra-registration-number</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>AHPRANumber</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>An Australian Health Practitioner Regulation Authority (AHPRA) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 AU Publisher</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://hl7.org.au/id/ahpra-registration-number</td><td>true</td><td>This value is used for Australian FHIR Implementations.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://hl7.org.au/id/ahpra-registration-number"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.0"
+  }],
+  "name" : "AHPRANumber",
+  "status" : "draft",
+  "kind" : "identifier",
+  "date" : "2018-01-01",
+  "publisher" : "HL7 AU Publisher",
+  "contact" : [{
+    "name" : "HL7 AU Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
+    }]
+  }],
+  "responsible" : "Services Australia",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+      "code" : "AHPRA",
+      "display" : "AHPRA Number"
+    }],
+    "text" : "AHPRA Number"
+  },
+  "description" : "An Australian Health Practitioner Regulation Authority (AHPRA) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "AU"
+    }]
+  }],
+  "usage" : "Health practitioner identification.",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://hl7.org.au/id/ahpra-registration-number",
+    "preferred" : true,
+    "comment" : "This value is used for Australian FHIR Implementations."
+  }]
+}
