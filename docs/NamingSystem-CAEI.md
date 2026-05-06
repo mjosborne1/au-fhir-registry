@@ -1,7 +1,8 @@
-# AU Care Agency Employee Identifier - HL7 AU FHIR Namespace registry v0.1.0
+# AU Care Agency Employee Identifier - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **AU Care Agency Employee Identifier**
 
 ## NamingSystem: AU Care Agency Employee Identifier 
@@ -39,19 +40,14 @@ A CAE identifier may be issued to an employee of, or person under contracted arr
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "CAEI",
-      "display" : "Care Agency Employee Identifier"
+      "code" : "CAEI"
     }],
     "text" : "Care Agency Employee Identifier"
   },

@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#MC "Patient's Medicare Number"
+* type = $v2-0203#MC
 * type.text = "Medicare Card Number"
 * description = "Medicare Card Number. A Medicare card is provided to individuals who are enrolled in Medicare. This identifier system may be used for the 10 digit Medicare card number or the 11 digit number that includes the individual reference number (IRN)."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

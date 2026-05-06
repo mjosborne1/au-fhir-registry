@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#CAEI "Care Agency Employee Identifier"
+* type = $v2-0203-au#CAEI
 * type.text = "Care Agency Employee Identifier"
 * description = "A CAE identifier may be issued to an employee of, or person under contracted arrangement with, a care agency who wishes to participate in the My Health Record."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

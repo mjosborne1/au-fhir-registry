@@ -3,7 +3,7 @@
   "id" : "ABN",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem ABN</b></p><a name=\"ABN\"> </a><a name=\"hcABN\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.org.au/id/abn</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>ABN</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Australian Business Number (ABN) is a unique 11 digit number that identifies a business or organisation in Australia. ABN lookup is available here https://abr.business.gov.au/.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 AU Publisher</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://hl7.org.au/id/abn</td><td>true</td><td>This value is used for Australian FHIR Implementations.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem ABN</b></p><a name=\"ABN\"> </a><a name=\"hcABN\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.org.au/id/abn</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>ABN</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Australian Business Number (ABN) is a unique 11 digit number that identifies a business or organisation in Australia. ABN lookup is available here https://abr.business.gov.au/.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 AU Publisher</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://hl7.org.au/id/abn</td><td>true</td><td>This value is used for organisation identification in Australian FHIR Implementations.</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
@@ -22,17 +22,13 @@
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Australian Business Register",
   "type" : {
     "coding" : [{
-      "system" : "http://terminology.hl7.org.au/ValueSet/v2-0203-extended",
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "code" : "XX",
       "display" : "Organization identifier"
     }],
@@ -50,6 +46,6 @@
     "type" : "uri",
     "value" : "http://hl7.org.au/id/abn",
     "preferred" : true,
-    "comment" : "This value is used for Australian FHIR Implementations."
+    "comment" : "This value is used for organisation identification in Australian FHIR Implementations."
   }]
 }

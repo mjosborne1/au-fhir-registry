@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#PAN "Pharmacy Approval Number"
+* type = $v2-0203-au#PAN
 * type.text = "Pharmacy Approval Number"
 * description = "Pharmacy Approval Number. A pharmacy approval number, also known as a PBS approval number, is assigned by the Department of Health to pharmacies that are approved to supply pharmaceutical benefits at particular premises under the National Health Act 1953."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

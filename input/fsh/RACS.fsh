@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#RACSI "Residential Aged Care Service Identifier"
+* type = $v2-0203-au#RACSI
 * type.text = "Residential Aged Care Service identifier"
 * description = "Residential Aged Care Service identifier. A RACS ID (also referred to as a residential aged care facility service identifier (RACF ID)) is assigned by DOHAC to a subsidised residential aged care service."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

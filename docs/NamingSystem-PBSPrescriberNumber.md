@@ -1,7 +1,8 @@
-# Pharmaceutical Benefits Scheme (PBS) prescriber number - HL7 AU FHIR Namespace registry v0.1.0
+# Pharmaceutical Benefits Scheme (PBS) prescriber number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Pharmaceutical Benefits Scheme (PBS) prescriber number**
 
 ## NamingSystem: Pharmaceutical Benefits Scheme (PBS) prescriber number 
@@ -39,19 +40,14 @@ Pharmaceutical Benefits Scheme (PBS) prescriber number. A PBS prescriber number 
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "PRES",
-      "display" : "Prescriber Number"
+      "code" : "PRES"
     }],
     "text" : "PBS Prescriber Number"
   },

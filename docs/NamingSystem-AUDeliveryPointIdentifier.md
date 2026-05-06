@@ -1,7 +1,8 @@
-# Australian Delivery Point Identifier - HL7 AU FHIR Namespace registry v0.1.0
+# Australian Delivery Point Identifier - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Australian Delivery Point Identifier**
 
 ## NamingSystem: Australian Delivery Point Identifier 
@@ -39,19 +40,14 @@ A DPID is a randomly generated, unique 8-digit number, allocated by Australia Po
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Australia Post",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "DPID",
-      "display" : "Delivery Point Identifier"
+      "code" : "DPID"
     }],
     "text" : "Australian Delivery Point Identifier"
   },

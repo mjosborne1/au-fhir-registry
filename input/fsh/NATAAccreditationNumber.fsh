@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "NATA"
-* type = $v2-0203-ex#NATAA "NATA Accreditation Number"
+* type = $v2-0203-au#NATAA
 * type.text = "NATA Accreditation Number"
 * description = "National Association of Testing Authorities (NATA) Accreditation Number is used to identify approved testing laboratories in the Australian context."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

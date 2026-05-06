@@ -1,7 +1,8 @@
-# Pharmacy Approval Number - HL7 AU FHIR Namespace registry v0.1.0
+# Pharmacy Approval Number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Pharmacy Approval Number**
 
 ## NamingSystem: Pharmacy Approval Number 
@@ -39,19 +40,14 @@ Pharmacy Approval Number. A pharmacy approval number, also known as a PBS approv
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "PAN",
-      "display" : "Pharmacy Approval Number"
+      "code" : "PAN"
     }],
     "text" : "Pharmacy Approval Number"
   },

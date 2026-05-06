@@ -1,130 +1,153 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Artifacts Summary - HL7 AU FHIR Namespace registry v0.1.0</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artefacts Summary - HL7 AU FHIR Namespace Registry v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="assets/css/fhir.css"/>
-    <link rel="stylesheet" href="assets/css/hl7au.css"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <link href="assets/css/hl7au.css" rel="stylesheet"/>
 
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a id="hl7-logo" href="http://hl7.com.au" data-no-external="true">
-            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 Australia website" height="50"/>
+          <a id="hl7-logo" data-no-external="true" href="http://hl7.com.au">
+            <img height="50" alt="Visit the HL7 Australia website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
 
         <div id="family-nav">
-          <a id="family-logo" href="http://hl7.com.au" data-no-external="true">
-            <img src="assets/images/fhir-au-logo-www.png" alt="Visit the HL7 Australia website" height="50"/> </a>
+          <a id="family-logo" data-no-external="true" href="http://hl7.com.au">
+            <img height="50" alt="Visit the HL7 Australia website" src="assets/images/fhir-au-logo-www.png"/> </a>
         </div>
 
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HL7 AU FHIR Namespace registry</span>
+          <p><span style="font-size:12pt;font-weight:bold">HL7 AU FHIR Namespace Registry</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
 
 
-  <img src="assets/images/aus.svg" alt="Australia flag" title="Australia" height="16"/>
+  <img alt="Australia flag" src="assets/images/aus.svg" height="16" title="Australia"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifacts</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="license.html">license</a>
+      </li>
+    </ul>
+  </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='fhirartifacts.html'><b>FHIR Artefacts</b></a></li><li><b>Artefacts Summary</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -136,12 +159,15 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">HL7 AU FHIR Namespace registry - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/au/au-fhir-registry/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Artifacts Summary</h2>
+  <!--ReleaseHeader--><p id="publish-box">HL7 AU FHIR Namespace Registry - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org.au/fhir/nsreg/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artefacts Summary</h2>
   
   
   
-    <!-- DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten --><div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
    <p>Contents:</p>
    <ul>
       <li>
@@ -149,7 +175,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
    </ul>
 </div>
-<div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Terminology: Naming Systems </h3>
@@ -167,7 +195,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-CSPRegistrationNumber.html" title="NamingSystem/CSPRegistrationNumber">AU Contracted Service Provider Registration Number</a>
+               <a href="NamingSystem-CSPRegistrationNumber.html"
+                  title="NamingSystem/CSPRegistrationNumber">AU Contracted Service Provider Registration Number</a>
             </td>
             <td>
 <p>A CSP registration number may be issued to organisations who wish to participate in the My Health Record and/or the Healthcare Identifiers Service as a CSP.</p>
@@ -191,7 +220,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-AUDeliveryPointIdentifier.html" title="NamingSystem/AUDeliveryPointIdentifier">Australian Delivery Point Identifier</a>
+               <a href="NamingSystem-AUDeliveryPointIdentifier.html"
+                  title="NamingSystem/AUDeliveryPointIdentifier">Australian Delivery Point Identifier</a>
             </td>
             <td>
 <p>A DPID is a randomly generated, unique 8-digit number, allocated by Australia Post to an address. A DPID enables each delivery point in Australia to be uniquely identified.</p>
@@ -207,7 +237,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-AUG-NAFIdentifier.html" title="NamingSystem/AUG-NAFIdentifier">Australian Geocoded National Address File Identifier</a>
+               <a href="NamingSystem-AUGNAFIdentifier.html"
+                  title="NamingSystem/AUGNAFIdentifier">Australian Geocoded National Address File Identifier</a>
             </td>
             <td>
 <p>Geoscape G-NAF is the geocoded address database for Australian businesses and governments.</p>
@@ -223,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-HPI-I.html" title="NamingSystem/HPI-I">Australian Healthcare Provider Identifier - Individual (HPI-I)</a>
+               <a href="NamingSystem-HPII.html" title="NamingSystem/HPII">Australian Healthcare Provider Identifier - Individual (HPI-I)</a>
             </td>
             <td>
 <p>This namespace is used to represent Healthcare Provider Identifier for Individuals (HPI-I) numbers.</p>
@@ -231,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-HPI-O.html" title="NamingSystem/HPI-O">Australian Healthcare Provider Identifier - Organisation (HPI-O)</a>
+               <a href="NamingSystem-HPIO.html" title="NamingSystem/HPIO">Australian Healthcare Provider Identifier - Organisation (HPI-O)</a>
             </td>
             <td>
 <p>This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers.</p>
@@ -271,7 +302,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-AUNATAAccreditationNumber.html" title="NamingSystem/AUNATAAccreditationNumber">Australian National Association of Testing Authorities (NATA) Accreditation Number</a>
+               <a href="NamingSystem-AUNATAAccreditationNumber.html"
+                  title="NamingSystem/AUNATAAccreditationNumber">Australian National Association of Testing Authorities (NATA) Accreditation Number</a>
             </td>
             <td>
 <p>National Association of Testing Authorities (NATA) Accreditation Number is used to identify approved testing laboratories in the Australian context.</p>
@@ -279,7 +311,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-AUNATASiteNumber.html" title="NamingSystem/AUNATASiteNumber">Australian National Association of Testing Authorities (NATA) Site Number</a>
+               <a href="NamingSystem-AUNATASiteNumber.html"
+                  title="NamingSystem/AUNATASiteNumber">Australian National Association of Testing Authorities (NATA) Site Number</a>
             </td>
             <td>
 <p>National Association of Testing Authorities (NATA) Accreditation Number is used to identify approved testing laboratory locations in the Australian context.</p>
@@ -295,7 +328,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-ABRN.html" title="NamingSystem/ABRN">Australian Registered Body Number (ARBN)</a>
+               <a href="NamingSystem-ARBN.html" title="NamingSystem/ARBN">Australian Registered Body Number (ARBN)</a>
             </td>
             <td>
 <p>This identifier identifies a registrable Australian body. Companies must apply to Australian Securities and Investments Commission (ASIC) to be issued an ARBN if they wish to operate in Australia. Foreign companies also require an ARBN.</p>
@@ -303,7 +336,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-CentrelinkCustomerReferenceNumber.html" title="NamingSystem/CentrelinkCustomerReferenceNumber">Centrelink Customer Reference Number</a>
+               <a href="NamingSystem-CentrelinkCustomerReferenceNumber.html"
+                  title="NamingSystem/CentrelinkCustomerReferenceNumber">Centrelink Customer Reference Number</a>
             </td>
             <td>
 <p>Centrelink Customer Reference Number (also referred to as unique identifier number (UIN) in the Centrelink Confirmation eServices (CCeS)). An identifier assigned to an individual by Centrelink for the purposes of identifying people (and organisations) eligible for specific services, including some public health care services, such as oral health services. This number may appear on a Health Care Card, Commonwealth Seniors Health Card, or Pensioner Concession Card.</p>
@@ -319,7 +353,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-MedicareNumber.html" title="NamingSystem/MedicareNumber">Medicare Number</a>
+               <a href="NamingSystem-MedicareNumber.html"
+                  title="NamingSystem/MedicareNumber">Medicare Number</a>
             </td>
             <td>
 <p>Medicare Card Number. A Medicare card is provided to individuals who are enrolled in Medicare. This identifier system may be used for the 10 digit Medicare card number or the 11 digit number that includes the individual reference number (IRN).</p>
@@ -327,7 +362,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-MedicareProviderNumber.html" title="NamingSystem/MedicareProviderNumber">Medicare Provider Number</a>
+               <a href="NamingSystem-MedicareProviderNumber.html"
+                  title="NamingSystem/MedicareProviderNumber">Medicare Provider Number</a>
             </td>
             <td>
 <p>Medicare Provider Number. A Medicare provider number is assigned by Services Australia under the Medicare program to practitioners who provide services that are eligible for a Medicare benefit. A practitioner may have more than one Medicare provider number if they deliver health services in different locations or are registered in multiple health professions.</p>
@@ -335,7 +371,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-PBSPrescriberNumber.html" title="NamingSystem/PBSPrescriberNumber">Pharmaceutical Benefits Scheme (PBS) prescriber number</a>
+               <a href="NamingSystem-PBSPrescriberNumber.html"
+                  title="NamingSystem/PBSPrescriberNumber">Pharmaceutical Benefits Scheme (PBS) prescriber number</a>
             </td>
             <td>
 <p>Pharmaceutical Benefits Scheme (PBS) prescriber number. A PBS prescriber number is assigned by Services Australia under the Pharmaceutical Benefits Scheme to practitioners who are approved to prescribe PBS medicines under the National Health Act 1953.</p>
@@ -343,7 +380,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-PharmacyApprovalNumber.html" title="NamingSystem/PharmacyApprovalNumber">Pharmacy Approval Number</a>
+               <a href="NamingSystem-PharmacyApprovalNumber.html"
+                  title="NamingSystem/PharmacyApprovalNumber">Pharmacy Approval Number</a>
             </td>
             <td>
 <p>Pharmacy Approval Number. A pharmacy approval number, also known as a PBS approval number, is assigned by the Department of Health to pharmacies that are approved to supply pharmaceutical benefits at particular premises under the National Health Act 1953.</p>
@@ -362,54 +400,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l693">​</a>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/au/au-fhir-registry/publisher">HL7 AU Publisher</a>.  Package hl7.fhir.au-fhir-registry#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 5, 2026 15:17+1000">2026-05-05</span>
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org.au">HL7 AU Publisher</a>.  Package hl7.fhir.au.nsreg#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 6, 2026 13:53+1000">2026-05-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" href="http://hl7.org/au/au-fhir-registry/history.html" target="_blank">Version History</a> |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org.au/fhir/nsreg/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

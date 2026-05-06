@@ -1,7 +1,7 @@
-id: hl7.fhir.au-fhir-registry
-canonical: http://hl7.org/au/au-fhir-registry
-name: au-fhir-registry
-title:  HL7 AU FHIR Namespace registry
+id: hl7.fhir.au.nsreg
+canonical: http://hl7.org.au/fhir/nsreg
+name: AUNSRegistry
+title:  HL7 AU FHIR Namespace Registry
 description: FHIR Namespaces used in the Australian (AU) domain
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -12,12 +12,67 @@ license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: "urn:iso:std:iso:3166#AU"
 publisher:
   name: HL7 AU Publisher
-  url: http://hl7.org/au/au-fhir-registry/publisher
-  email: secretary@hl7.com.au
+  url: http://www.hl7.org.au
+email: secretary@hl7.com.au
 FSHOnly: false
 pages:
   index.md:
     title: Home
+  fhirartifacts.md:
+    title: FHIR Artefacts  
+    artifacts.html:
+      title: Artefacts Summary
+  license.md:
+  downloads.md:
+
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:    
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - fsh-generated/includes
+  special-url:
+    - http://hl7.org.au/id/acn
+    - http://hl7.org.au/id/abn
+    - http://hl7.org.au/id/arbn
+    - http://hl7.org.au/id/ahpra-registration-number
+    - http://hl7.org.au/id/dpid
+    - http://hl7.org.au/id/gnafidentifier
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r
+    - http://hl7.org.au/id/nata-accreditation
+    - http://hl7.org.au/id/nata-site
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/caei
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/csp
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/crn
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/dva
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/ihi
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/lspn
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/medicarenum
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum
+    - http://hl7.org.au/id/npio
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pbsprescribernum
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/phan
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/racs
+
+#- input/summaries
+  path-expansion-params: '../../input/_resources/exp-params.json' 
+  active-tables: true
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true
+  show-inherited-invariants: false
+  usage-stats-opt-out: true
+  excludexml: false
+  excludejson: false
+  excludettl: false
+  excludemap: true
+  shownav: false
+  version-comparison: n/a
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -48,24 +103,16 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-#  Artifacts: artifacts.html
+  FHIR Artefacts:
+    Artifacts: artifacts.html
+  Support:
+    Downloads: downloads.html
+    license: license.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-#
-# Those who need more control or want to add additional details to the contact values can use
-# contact directly and follow the format outlined in the ImplementationGuide resource and
-# ContactDetail.
-#
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
-#
 #
 # The global property corresponds to the IG.global property, but it
 # uses the type as the YAML key and the profile as its value. Since

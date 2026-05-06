@@ -1,24 +1,27 @@
-# hl7.fhir.au-fhir-registry#0.1.0: HL7 AU FHIR Namespace registry
+# hl7.fhir.au.nsreg#0.1.0: HL7 AU FHIR Namespace Registry
 
 ## Pages
 
 * [Home](index.md)
-* [Artifacts Summary](artifacts.md)
+* [Artefacts Summary](artifacts.md)
+* [License](license.md)
+* [Downloads](downloads.md)
+* [FHIR Artefacts](fhirartifacts.md)
 
 ## Resources
 
 ### ImplementationGuides
 
-* [HL7 AU FHIR Namespace registry](index.md)
+* [HL7 AU FHIR Namespace Registry](index.md)
 
 ### NamingSystems
 
 * [ABN](NamingSystem-ABN.md)
-* [ARBN](NamingSystem-ABRN.md)
 * [ACN](NamingSystem-ACN.md)
 * [AHPRANumber](NamingSystem-AHPRANumber.md)
+* [ARBN](NamingSystem-ARBN.md)
 * [DPID](NamingSystem-AUDeliveryPointIdentifier.md)
-* [G-NAFID](NamingSystem-AUG-NAFIdentifier.md)
+* [GNAFID](NamingSystem-AUGNAFIdentifier.md)
 * [AustralianPAI-D](NamingSystem-AUHPAI-D.md)
 * [PAIO](NamingSystem-AUHPAI-O.md)
 * [PAIR](NamingSystem-AUHPAI-R.md)
@@ -28,8 +31,8 @@
 * [CSPRN](NamingSystem-CSPRegistrationNumber.md)
 * [AustralianCRN](NamingSystem-CentrelinkCustomerReferenceNumber.md)
 * [AustalianDVAFileNumber](NamingSystem-DVANumber.md)
-* [AustralianHPII](NamingSystem-HPI-I.md)
-* [AustralianHPIO](NamingSystem-HPI-O.md)
+* [AustralianHPII](NamingSystem-HPII.md)
+* [AustralianHPIO](NamingSystem-HPIO.md)
 * [AustralianIHI](NamingSystem-IHI.md)
 * [LSPN](NamingSystem-LSPN.md)
 * [MedicareNumber](NamingSystem-MedicareNumber.md)

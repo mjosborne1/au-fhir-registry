@@ -1,7 +1,8 @@
-# Australian Business Number (ABN) - HL7 AU FHIR Namespace registry v0.1.0
+# Australian Business Number (ABN) - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Australian Business Number (ABN)**
 
 ## NamingSystem: Australian Business Number (ABN) 
@@ -39,17 +40,13 @@ Australian Business Number (ABN) is a unique 11 digit number that identifies a b
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Australian Business Register",
   "type" : {
     "coding" : [{
-      "system" : "http://terminology.hl7.org.au/ValueSet/v2-0203-extended",
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "code" : "XX",
       "display" : "Organization identifier"
     }],
@@ -67,7 +64,7 @@ Australian Business Number (ABN) is a unique 11 digit number that identifies a b
     "type" : "uri",
     "value" : "http://hl7.org.au/id/abn",
     "preferred" : true,
-    "comment" : "This value is used for Australian FHIR Implementations."
+    "comment" : "This value is used for organisation identification in Australian FHIR Implementations."
   }]
 }
 

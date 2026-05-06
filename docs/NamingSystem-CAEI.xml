@@ -21,11 +21,7 @@
     <name value="HL7 AU Publisher"/>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/au/au-fhir-registry/publisher"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="secretary@hl7.com.au"/>
+      <value value="http://www.hl7.org.au"/>
     </telecom>
   </contact>
   <responsible value="Services Australia"/>
@@ -33,7 +29,6 @@
     <coding>
       <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
       <code value="CAEI"/>
-      <display value="Care Agency Employee Identifier"/>
     </coding>
     <text value="Care Agency Employee Identifier"/>
   </type>

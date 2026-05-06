@@ -1,4 +1,4 @@
-Instance: HPI-I
+Instance: HPII
 InstanceOf: NamingSystem
 Title: "Australian Healthcare Provider Identifier - Individual (HPI-I)"
 Usage: #definition

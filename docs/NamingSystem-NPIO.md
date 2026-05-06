@@ -1,7 +1,8 @@
-# Australian National Provider Identifier at an Organisation (NPIO) - HL7 AU FHIR Namespace registry v0.1.0
+# Australian National Provider Identifier at an Organisation (NPIO) - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Australian National Provider Identifier at an Organisation (NPIO)**
 
 ## NamingSystem: Australian National Provider Identifier at an Organisation (NPIO) 
@@ -39,19 +40,14 @@ A National Provider Identifier at Organisation (NPIO) uniquely identifies an ind
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Australian Digital Health Agency",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "NPIO",
-      "display" : "National Provider at Organisation Identifier"
+      "code" : "NPIO"
     }],
     "text" : "National Provider at Organisation Identifier"
   },

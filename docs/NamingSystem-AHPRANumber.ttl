@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/au/au-fhir-registry/NamingSystem/AHPRANumber> a fhir:NamingSystem ;
+<http://hl7.org.au/fhir/nsreg/NamingSystem/AHPRANumber> a fhir:NamingSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "AHPRANumber"] ; # 
   fhir:text [
@@ -42,10 +42,7 @@
      fhir:name [ fhir:v "HL7 AU Publisher" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://hl7.org/au/au-fhir-registry/publisher" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "secretary@hl7.com.au" ]
+       fhir:value [ fhir:v "http://www.hl7.org.au" ]
      ] )
   ] ) ; # 
   fhir:responsible [ fhir:v "Services Australia"] ; # 
@@ -55,8 +52,7 @@
          fhir:v "http://terminology.hl7.org.au/CodeSystem/v2-0203"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org.au/CodeSystem/v2-0203>
        ] ;
-       fhir:code [ fhir:v "AHPRA" ] ;
-       fhir:display [ fhir:v "AHPRA Number" ]
+       fhir:code [ fhir:v "AHPRA" ]
      ] ) ;
      fhir:text [ fhir:v "AHPRA Number" ]
   ] ; # 

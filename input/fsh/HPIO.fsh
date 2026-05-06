@@ -1,4 +1,4 @@
-Instance: HPI-O
+Instance: HPIO
 InstanceOf: NamingSystem
 Title: "Australian Healthcare Provider Identifier - Organisation (HPI-O)"
 Usage: #definition
@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Australian Digital Health Agency"
-* type = $v2-0203#NOI "National Organization Identifier"
+* type = $v2-0203-au#NOI
 * type.text = "National Organization Identifier"
 * description = "This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

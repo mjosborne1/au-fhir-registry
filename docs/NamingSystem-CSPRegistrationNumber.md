@@ -1,7 +1,8 @@
-# AU Contracted Service Provider Registration Number - HL7 AU FHIR Namespace registry v0.1.0
+# AU Contracted Service Provider Registration Number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **AU Contracted Service Provider Registration Number**
 
 ## NamingSystem: AU Contracted Service Provider Registration Number 
@@ -39,19 +40,14 @@ A CSP registration number may be issued to organisations who wish to participate
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "CSPRN",
-      "display" : "Contracted Service Provider (CSP) Registration Number"
+      "code" : "CSPRN"
     }],
     "text" : "CSP Registration Number"
   },

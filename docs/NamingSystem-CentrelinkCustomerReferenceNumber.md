@@ -1,7 +1,8 @@
-# Centrelink Customer Reference Number - HL7 AU FHIR Namespace registry v0.1.0
+# Centrelink Customer Reference Number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Centrelink Customer Reference Number**
 
 ## NamingSystem: Centrelink Customer Reference Number 
@@ -39,17 +40,13 @@ Centrelink Customer Reference Number (also referred to as unique identifier numb
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
-      "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "code" : "PEN",
       "display" : "Pension Number"
     }],

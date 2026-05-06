@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Australian Digital Health Agency"
-* type = $v2-0203#NI "National unique individual identifier"
+* type = $v2-0203#NI
 * type.text = "IHI"
 * description = "Australian Individual Healthcare Identifier (IHI). An IHI is assigned under the Healthcare Identifiers (HI) Service to a patient."
 * jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"

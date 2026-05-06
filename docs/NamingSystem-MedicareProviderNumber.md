@@ -1,7 +1,8 @@
-# Medicare Provider Number - HL7 AU FHIR Namespace registry v0.1.0
+# Medicare Provider Number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Medicare Provider Number**
 
 ## NamingSystem: Medicare Provider Number 
@@ -39,19 +40,14 @@ Medicare Provider Number. A Medicare provider number is assigned by Services Aus
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",
   "type" : {
     "coding" : [{
-      "system" : "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-      "code" : "UPIN",
-      "display" : "Medicare Provider Number"
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "UPIN"
     }],
     "text" : "Medicare Provider Number"
   },

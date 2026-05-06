@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
-  "date" : "20260505151730",
+  "date" : "20260506135317",
   "notForPublication" : true,
-  "name" : "hl7.fhir.au-fhir-registry.r4b"
+  "name" : "hl7.fhir.au.nsreg.r4b"
 }

@@ -1,7 +1,8 @@
-# Location Specific Practice Number - HL7 AU FHIR Namespace registry v0.1.0
+# Location Specific Practice Number - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Artifacts Summary**](artifacts.md)
+* [**FHIR Artefacts**](fhirartifacts.md)
+* [**Artefacts Summary**](artifacts.md)
 * **Location Specific Practice Number**
 
 ## NamingSystem: Location Specific Practice Number 
@@ -39,11 +40,7 @@ Location Specific Practice Number. A Location Specific Practice Number (LSPN) is
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "responsible" : "Services Australia",

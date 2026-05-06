@@ -1,4 +1,4 @@
-# Home - HL7 AU FHIR Namespace registry v0.1.0
+# Home - HL7 AU FHIR Namespace Registry v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au-fhir-registry | *Version*:0.1.0 |
-| Draft as of 2026-05-05 | *Computable Name*:aufhirregistry |
+| *Official URL*:http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg | *Version*:0.1.0 |
+| Draft as of 2026-05-06 | *Computable Name*:AUNSRegistry |
 
 # au-fhir-registry
 
@@ -20,7 +20,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
   * ?: This identifier identifies an Australian Company Number in an Australian context. An ACN is allocated by the Australian Securities and Investments Commission (ASIC) when a body becomes registered as a company under Corporations Law.
 * NamingSystem: [AHPRANumber](NamingSystem-AHPRANumber.md)
   * ?: An Australian Health Practitioner Regulation Authority (AHPRA) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession.
-* NamingSystem: [ARBN](NamingSystem-ABRN.md)
+* NamingSystem: [ARBN](NamingSystem-ARBN.md)
   * ?: This identifier identifies a registrable Australian body. Companies must apply to Australian Securities and Investments Commission (ASIC) to be issued an ARBN if they wish to operate in Australia. Foreign companies also require an ARBN.
 * NamingSystem: [AUNATAAccreditationNumber](NamingSystem-AUNATAAccreditationNumber.md)
   * ?: National Association of Testing Authorities (NATA) Accreditation Number is used to identify approved testing laboratories in the Australian context.
@@ -30,9 +30,9 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
   * ?: Australian Department of Veterans’ Affairs (DVA) file number. An individual’s state-based Department of Veterans’ Affairs (DVA) File number as displayed on a Veteran Card.
 * NamingSystem: [AustralianCRN](NamingSystem-CentrelinkCustomerReferenceNumber.md)
   * ?: Centrelink Customer Reference Number (also referred to as unique identifier number (UIN) in the Centrelink Confirmation eServices (CCeS)). An identifier assigned to an individual by Centrelink for the purposes of identifying people (and organisations) eligible for specific services, including some public health care services, such as oral health services. This number may appear on a Health Care Card, Commonwealth Seniors Health Card, or Pensioner Concession Card.
-* NamingSystem: [AustralianHPII](NamingSystem-HPI-I.md)
+* NamingSystem: [AustralianHPII](NamingSystem-HPII.md)
   * ?: This namespace is used to represent Healthcare Provider Identifier for Individuals (HPI-I) numbers.
-* NamingSystem: [AustralianHPIO](NamingSystem-HPI-O.md)
+* NamingSystem: [AustralianHPIO](NamingSystem-HPIO.md)
   * ?: This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers.
 * NamingSystem: [AustralianIHI](NamingSystem-IHI.md)
   * ?: Australian Individual Healthcare Identifier (IHI). An IHI is assigned under the Healthcare Identifiers (HI) Service to a patient.
@@ -44,7 +44,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
   * ?: A CSP registration number may be issued to organisations who wish to participate in the My Health Record and/or the Healthcare Identifiers Service as a CSP.
 * NamingSystem: [DPID](NamingSystem-AUDeliveryPointIdentifier.md)
   * ?: A DPID is a randomly generated, unique 8-digit number, allocated by Australia Post to an address. A DPID enables each delivery point in Australia to be uniquely identified.
-* NamingSystem: [G-NAFID](NamingSystem-AUG-NAFIdentifier.md)
+* NamingSystem: [GNAFID](NamingSystem-AUGNAFIdentifier.md)
   * ?: Geoscape G-NAF is the geocoded address database for Australian businesses and governments.
 * NamingSystem: [LSPN](NamingSystem-LSPN.md)
   * ?: Location Specific Practice Number. A Location Specific Practice Number (LSPN) is an identifier assigned to a specific location by Services Australia under the Medicare program and identifies an accredited practice site that provides diagnostic imaging and radiation oncology services.
@@ -72,23 +72,19 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.au-fhir-registry",
-  "url" : "http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au-fhir-registry",
+  "id" : "hl7.fhir.au.nsreg",
+  "url" : "http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg",
   "version" : "0.1.0",
-  "name" : "aufhirregistry",
-  "title" : "HL7 AU FHIR Namespace registry",
+  "name" : "AUNSRegistry",
+  "title" : "HL7 AU FHIR Namespace Registry",
   "status" : "draft",
-  "date" : "2026-05-05T15:17:30+10:00",
+  "date" : "2026-05-06T13:53:17+10:00",
   "publisher" : "HL7 AU Publisher",
   "contact" : [{
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/au/au-fhir-registry/publisher"
-    },
-    {
-      "system" : "email",
-      "value" : "secretary@hl7.com.au"
+      "value" : "http://www.hl7.org.au"
     }]
   }],
   "description" : "FHIR Namespaces used in the Australian (AU) domain",
@@ -98,7 +94,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       "code" : "AU"
     }]
   }],
-  "packageId" : "hl7.fhir.au-fhir-registry",
+  "packageId" : "hl7.fhir.au.nsreg",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -147,11 +143,418 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueString" : "special-url"
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org/au/au-fhir-registry/history.html"
+        "valueString" : "http://hl7.org.au/id/acn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/abn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/arbn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/ahpra-registration-number"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/dpid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/gnafidentifier"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/nata-accreditation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/nata-site"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/dva"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/ihi"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/lspn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicarenum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/npio"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pbsprescribernum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/phan"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/racs"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../input/_resources/exp-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "usage-stats-opt-out"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludexml"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludejson"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludettl"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludemap"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "version-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "n/a"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -235,6 +638,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/fhir/nsreg/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "template-html"
       },
       {
@@ -251,17 +665,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -290,17 +693,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-license"
       },
       {
@@ -312,40 +704,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "active-tables"
       },
       {
         "url" : "value",
@@ -398,6 +757,12 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+      "valueReference" : {
+        "reference" : "Parameters/expansion-parameters"
+      }
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
@@ -426,11 +791,418 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-history"
+        "valueCode" : "special-url"
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org/au/au-fhir-registry/history.html"
+        "valueString" : "http://hl7.org.au/id/acn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/abn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/arbn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/ahpra-registration-number"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/dpid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/gnafidentifier"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/nata-accreditation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/nata-site"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/dva"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/ihi"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/lspn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicarenum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/npio"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pbsprescribernum"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/phan"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/racs"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../input/_resources/exp-params.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "usage-stats-opt-out"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludexml"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludejson"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludettl"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludemap"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "version-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "n/a"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -514,6 +1286,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/fhir/nsreg/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "template-html"
       },
       {
@@ -530,17 +1313,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -569,17 +1341,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "apply-license"
       },
       {
@@ -591,40 +1352,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -754,7 +1482,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/AUG-NAFIdentifier"
+        "reference" : "NamingSystem/AUGNAFIdentifier"
       },
       "name" : "Australian Geocoded National Address File Identifier",
       "description" : "Geoscape G-NAF is the geocoded address database for Australian businesses and governments.",
@@ -778,7 +1506,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/HPI-I"
+        "reference" : "NamingSystem/HPII"
       },
       "name" : "Australian Healthcare Provider Identifier - Individual (HPI-I)",
       "description" : "This namespace is used to represent Healthcare Provider Identifier for Individuals (HPI-I) numbers.",
@@ -790,7 +1518,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/HPI-O"
+        "reference" : "NamingSystem/HPIO"
       },
       "name" : "Australian Healthcare Provider Identifier - Organisation (HPI-O)",
       "description" : "This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers.",
@@ -886,7 +1614,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/ABRN"
+        "reference" : "NamingSystem/ARBN"
       },
       "name" : "Australian Registered Body Number (ARBN)",
       "description" : "This identifier identifies a registrable Australian body. Companies must apply to Australian Securities and Investments Commission (ASIC) to be issued an ARBN if they wish to operate in Australia. Foreign companies also require an ARBN.",
@@ -992,9 +1720,57 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "fhirartifacts.html"
+        }],
+        "nameUrl" : "fhirartifacts.html",
+        "title" : "FHIR Artefacts",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "artifacts.html"
+          }],
+          "nameUrl" : "artifacts.html",
+          "title" : "Artefacts Summary",
+          "generation" : "html"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "license.html"
+        }],
+        "nameUrl" : "license.html",
+        "title" : "License",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "fsh-generated/includes"
+    },
+    {
       "code" : "path-resource",
       "value" : "input/capabilities"
     },
@@ -1020,15 +1796,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     },
     {
       "code" : "path-resource",
-      "value" : "input/resources"
-    },
-    {
-      "code" : "path-resource",
       "value" : "input/vocabulary"
-    },
-    {
-      "code" : "path-resource",
-      "value" : "input/maps"
     },
     {
       "code" : "path-resource",
@@ -1037,10 +1805,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "code" : "path-resource",
       "value" : "input/history"
-    },
-    {
-      "code" : "path-resource",
-      "value" : "fsh-generated/resources"
     },
     {
       "code" : "path-pages",
