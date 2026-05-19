@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
-  "date" : "20260506135418",
+  "date" : "20260519120552",
   "notForPublication" : true,
-  "name" : "hl7.fhir.au.nsreg"
+  "name" : "hl7.fhir.au.nsregister"
 }

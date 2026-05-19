@@ -23,6 +23,10 @@
       <system value="url"/>
       <value value="http://www.hl7.org.au"/>
     </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@hl7.com.au"/>
+    </telecom>
   </contact>
   <responsible value="NATA"/>
   <type>

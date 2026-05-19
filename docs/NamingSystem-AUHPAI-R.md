@@ -1,8 +1,7 @@
-# Australian My Health Record Assigned Identity - Repository (PAI-R) identifier - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian My Health Record Assigned Identity - Repository (PAI-R) identifier - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian My Health Record Assigned Identity - Repository (PAI-R) identifier**
 
 ## NamingSystem: Australian My Health Record Assigned Identity - Repository (PAI-R) identifier 
@@ -41,6 +40,10 @@ This identifier profile defines a My Health Record Assigned Identity - Repositor
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Australian Digital Health Agency",

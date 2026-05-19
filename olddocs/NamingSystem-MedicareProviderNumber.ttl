@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org.au/fhir/nsreg/NamingSystem/MedicareProviderNumber> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicareProviderNumber"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem MedicareProviderNumber</b></p><a name=\"MedicareProviderNumber\"> </a><a name=\"hcMedicareProviderNumber\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>MedicareProviderNumber</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Medicare Provider Number. A Medicare provider number is assigned by Services Australia under the Medicare program to practitioners who provide services that are eligible for a Medicare benefit. A practitioner may have more than one Medicare provider number if they deliver health services in different locations or are registered in multiple health professions.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 AU Publisher</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://ns.electronichealth.net.au/id/medicare-provider-number</td><td>true</td><td>This value is used for Australian FHIR Implementations.</td></tr><tr><td>OID</td><td>1.2.36.174030967.0.2</td><td/><td>This value is used in Australian CDA documents and OID based systems.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum"^^xsd:anyURI ;
+       fhir:l <http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "0.1.0"
+     ]
+  ] ) ; # 
+  fhir:name [ fhir:v "MedicareProviderNumber"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "identifier"] ; # 
+  fhir:date [ fhir:v "2018-02-21"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 AU Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 AU Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org.au" ]
+     ] )
+  ] ) ; # 
+  fhir:responsible [ fhir:v "Services Australia"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+       ] ;
+       fhir:code [ fhir:v "UPIN" ]
+     ] ) ;
+     fhir:text [ fhir:v "Medicare Provider Number" ]
+  ] ; # 
+  fhir:description [ fhir:v "Medicare Provider Number. A Medicare provider number is assigned by Services Australia under the Medicare program to practitioners who provide services that are eligible for a Medicare benefit. A practitioner may have more than one Medicare provider number if they deliver health services in different locations or are registered in multiple health professions."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "AU" ]
+     ] )
+  ] ) ; # 
+  fhir:usage [ fhir:v "Australian Federal Government funded medical insurance patient identification"] ; # 
+  fhir:uniqueId ( [
+     fhir:type [ fhir:v "uri" ] ;
+     fhir:value [ fhir:v "http://ns.electronichealth.net.au/id/medicare-provider-number" ] ;
+     fhir:preferred [ fhir:v true ] ;
+     fhir:comment [ fhir:v "This value is used for Australian FHIR Implementations." ]
+  ] [
+     fhir:type [ fhir:v "oid" ] ;
+     fhir:value [ fhir:v "1.2.36.174030967.0.2" ] ;
+     fhir:comment [ fhir:v "This value is used in Australian CDA documents and OID based systems." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

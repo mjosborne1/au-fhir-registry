@@ -1,8 +1,7 @@
-# Australian National Association of Testing Authorities (NATA) Site Number - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian National Association of Testing Authorities (NATA) Site Number - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian National Association of Testing Authorities (NATA) Site Number**
 
 ## NamingSystem: Australian National Association of Testing Authorities (NATA) Site Number 
@@ -41,6 +40,10 @@ National Association of Testing Authorities (NATA) Accreditation Number is used 
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "NATA",

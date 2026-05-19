@@ -1,4 +1,4 @@
-# Home - HL7 AU FHIR Namespace Registry v0.1.0
+# Home - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,12 +7,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg | *Version*:0.1.0 |
-| Draft as of 2026-05-06 | *Computable Name*:AUNSRegistry |
+| *Official URL*:http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister | *Version*:0.1.0 |
+| Draft as of 2026-05-19 | *Computable Name*:AUNSRegister |
 
-# au-fhir-registry
+# HL7 AU FHIR Namespace Registry
 
-Repository of AU Domain Namespaces as FHIR NamimgSystems
+The HL7 AU FHIR Namespace Registry is a repository of Australian domain namespaces defined as FHIR [NamingSystem](https://hl7.org/fhir/R4/namingsystem.html) resources. It provides a centralised, machine-readable catalogue of identifier and code system URIs used across Australian healthcare and related sectors.
+
+## Purpose
+
+Australian healthcare, government, and business systems use a wide variety of identifier schemes. This registry defines those schemes as FHIR NamingSystems so that implementers can reference authoritative URIs when exchanging FHIR resources.
+
+## NamingSystems
 
 * NamingSystem: [ABN](NamingSystem-ABN.md)
   * ?: Australian Business Number (ABN) is a unique 11 digit number that identifies a business or organisation in Australia. ABN lookup is available here https://abr.business.gov.au/.
@@ -36,7 +42,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
   * ?: This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers.
 * NamingSystem: [AustralianIHI](NamingSystem-IHI.md)
   * ?: Australian Individual Healthcare Identifier (IHI). An IHI is assigned under the Healthcare Identifiers (HI) Service to a patient.
-* NamingSystem: [AustralianPAI-D](NamingSystem-AUHPAI-D.md)
+* NamingSystem: [AustralianPAID](NamingSystem-AUHPAID.md)
   * ?: This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system.
 * NamingSystem: [CAEI](NamingSystem-CAEI.md)
   * ?: A CAE identifier may be issued to an employee of, or person under contracted arrangement with, a care agency who wishes to participate in the My Health Record.
@@ -72,19 +78,23 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.au.nsreg",
-  "url" : "http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg",
+  "id" : "hl7.fhir.au.nsregister",
+  "url" : "http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister",
   "version" : "0.1.0",
-  "name" : "AUNSRegistry",
-  "title" : "HL7 AU FHIR Namespace Registry",
+  "name" : "AUNSRegister",
+  "title" : "HL7 AU FHIR Namespace registry",
   "status" : "draft",
-  "date" : "2026-05-06T13:53:17+10:00",
+  "date" : "2026-05-19T12:05:00+10:00",
   "publisher" : "HL7 AU Publisher",
   "contact" : [{
     "name" : "HL7 AU Publisher",
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "description" : "FHIR Namespaces used in the Australian (AU) domain",
@@ -94,7 +104,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       "code" : "AU"
     }]
   }],
-  "packageId" : "hl7.fhir.au.nsreg",
+  "packageId" : "hl7.fhir.au.nsregister",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -115,7 +125,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
@@ -147,17 +157,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org.au/id/acn"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "http://hl7.org.au/id/abn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -170,6 +169,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "http://hl7.org.au/id/arbn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/acn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -213,28 +223,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "http://hl7.org.au/id/nata-accreditation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -257,6 +245,28 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
+        "valueString" : "http://hl7.org.au/id/npio"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/id/pcehr/paid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -268,7 +278,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -279,7 +289,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -367,7 +377,18 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org.au/id/npio"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -407,154 +428,11 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-expansion-params"
+        "valueString" : "path-history"
       },
       {
         "url" : "value",
-        "valueString" : "../../input/_resources/exp-params.json"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "show-inherited-invariants"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "usage-stats-opt-out"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludexml"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludejson"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludettl"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludemap"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "shownav"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "version-comparison"
-      },
-      {
-        "url" : "value",
-        "valueString" : "n/a"
+        "valueString" : "http://hl7.org/au/au-fhir-registry/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -638,17 +516,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org.au/fhir/nsreg/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "template-html"
       },
       {
@@ -665,6 +532,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -693,6 +571,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "apply-license"
       },
       {
@@ -704,7 +593,40 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
       },
       {
         "url" : "value",
@@ -757,12 +679,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
-      "valueReference" : {
-        "reference" : "Parameters/expansion-parameters"
-      }
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
@@ -795,17 +711,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org.au/id/acn"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "http://hl7.org.au/id/abn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -818,6 +723,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "http://hl7.org.au/id/arbn"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org.au/id/acn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -861,28 +777,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "http://hl7.org.au/id/nata-accreditation"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -905,6 +799,28 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
+        "valueString" : "http://hl7.org.au/id/npio"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/id/pcehr/paid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -916,7 +832,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -927,7 +843,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1015,7 +931,18 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.org.au/id/npio"
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1055,154 +982,11 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-expansion-params"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
-        "valueString" : "../../input/_resources/exp-params.json"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "show-inherited-invariants"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "usage-stats-opt-out"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludexml"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludejson"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludettl"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludemap"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "shownav"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "version-comparison"
-      },
-      {
-        "url" : "value",
-        "valueString" : "n/a"
+        "valueString" : "http://hl7.org/au/au-fhir-registry/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1286,17 +1070,6 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org.au/fhir/nsreg/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "template-html"
       },
       {
@@ -1313,6 +1086,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "url" : "value",
         "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1341,6 +1125,17 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "apply-license"
       },
       {
@@ -1352,7 +1147,40 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -1542,7 +1370,7 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/AUHPAI-D"
+        "reference" : "NamingSystem/AUHPAID"
       },
       "name" : "Australian My Health Record Assigned Identity - Device (PAI-D) identifier",
       "description" : "This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system.",
@@ -1724,53 +1552,14 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "fhirartifacts.html"
+          "valueUrl" : "artifacts.html"
         }],
-        "nameUrl" : "fhirartifacts.html",
-        "title" : "FHIR Artefacts",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "artifacts.html"
-          }],
-          "nameUrl" : "artifacts.html",
-          "title" : "Artefacts Summary",
-          "generation" : "html"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "license.html"
-        }],
-        "nameUrl" : "license.html",
-        "title" : "License",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "downloads.html"
-        }],
-        "nameUrl" : "downloads.html",
-        "title" : "Downloads",
-        "generation" : "markdown"
+        "nameUrl" : "artifacts.html",
+        "title" : "Artifacts",
+        "generation" : "html"
       }]
     },
     "parameter" : [{
-      "code" : "path-resource",
-      "value" : "input/resources"
-    },
-    {
-      "code" : "path-resource",
-      "value" : "fsh-generated/resources"
-    },
-    {
-      "code" : "path-pages",
-      "value" : "fsh-generated/includes"
-    },
-    {
       "code" : "path-resource",
       "value" : "input/capabilities"
     },
@@ -1796,7 +1585,15 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     },
     {
       "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
       "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
     },
     {
       "code" : "path-resource",
@@ -1805,6 +1602,10 @@ Repository of AU Domain Namespaces as FHIR NamimgSystems
     {
       "code" : "path-resource",
       "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
     },
     {
       "code" : "path-pages",

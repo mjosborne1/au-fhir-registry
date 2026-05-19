@@ -1,11 +1,4 @@
 [{
-  "id" : "hl7.fhir.au.nsreg",
-  "type" : "ImplementationGuide",
-  "url" : "http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg",
-  "version" : "0.1.0",
-  "name" : "AUNSRegistry"
-},
-{
   "id" : "ABN",
   "type" : "NamingSystem",
   "url" : "http://hl7.org.au/id/abn",
@@ -69,6 +62,13 @@
   "name" : "NPIO"
 },
 {
+  "id" : "hl7.fhir.au.nsregister",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister",
+  "version" : "0.1.0",
+  "name" : "AUNSRegister"
+},
+{
   "id" : "CAEI",
   "type" : "NamingSystem",
   "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei",
@@ -102,13 +102,6 @@
   "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i",
   "version" : "0.1.0",
   "name" : "AustralianHPII"
-},
-{
-  "id" : "AUHPAI-D",
-  "type" : "NamingSystem",
-  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o",
-  "version" : "0.1.0",
-  "name" : "AustralianPAI-D"
 },
 {
   "id" : "HPIO",
@@ -179,4 +172,11 @@
   "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/racs",
   "version" : "0.1.0",
   "name" : "RACS"
+},
+{
+  "id" : "AUHPAID",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/id/pcehr/paid",
+  "version" : "0.1.0",
+  "name" : "AustralianPAID"
 }]

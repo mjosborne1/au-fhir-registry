@@ -1,0 +1,182 @@
+[{
+  "id" : "hl7.fhir.au.nsreg",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg",
+  "version" : "0.1.0",
+  "name" : "AUNSRegistry"
+},
+{
+  "id" : "ABN",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/abn",
+  "version" : "0.1.0",
+  "name" : "ABN"
+},
+{
+  "id" : "ACN",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/acn",
+  "version" : "0.1.0",
+  "name" : "ACN"
+},
+{
+  "id" : "AHPRANumber",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/ahpra-registration-number",
+  "version" : "0.1.0",
+  "name" : "AHPRANumber"
+},
+{
+  "id" : "ARBN",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/arbn",
+  "version" : "0.1.0",
+  "name" : "ARBN"
+},
+{
+  "id" : "AUDeliveryPointIdentifier",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/dpid",
+  "version" : "0.1.0",
+  "name" : "DPID"
+},
+{
+  "id" : "AUGNAFIdentifier",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/gnafidentifier",
+  "version" : "0.1.0",
+  "name" : "GNAFID"
+},
+{
+  "id" : "AUNATAAccreditationNumber",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/nata-accreditation",
+  "version" : "0.1.0",
+  "name" : "AUNATAAccreditationNumber"
+},
+{
+  "id" : "AUNATASiteNumber",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/nata-site",
+  "version" : "0.1.0",
+  "name" : "AUNATASiteNumber"
+},
+{
+  "id" : "NPIO",
+  "type" : "NamingSystem",
+  "url" : "http://hl7.org.au/id/npio",
+  "version" : "0.1.0",
+  "name" : "NPIO"
+},
+{
+  "id" : "CAEI",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/caei",
+  "version" : "0.1.0",
+  "name" : "CAEI"
+},
+{
+  "id" : "CentrelinkCustomerReferenceNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/crn",
+  "version" : "0.1.0",
+  "name" : "AustralianCRN"
+},
+{
+  "id" : "CSPRegistrationNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/csp",
+  "version" : "0.1.0",
+  "name" : "CSPRN"
+},
+{
+  "id" : "DVANumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/dva",
+  "version" : "0.1.0",
+  "name" : "AustalianDVAFileNumber"
+},
+{
+  "id" : "HPII",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i",
+  "version" : "0.1.0",
+  "name" : "AustralianHPII"
+},
+{
+  "id" : "AUHPAI-D",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o",
+  "version" : "0.1.0",
+  "name" : "AustralianPAI-D"
+},
+{
+  "id" : "HPIO",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o",
+  "version" : "0.1.0",
+  "name" : "AustralianHPIO"
+},
+{
+  "id" : "IHI",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/ihi",
+  "version" : "0.1.0",
+  "name" : "AustralianIHI"
+},
+{
+  "id" : "LSPN",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/lspn",
+  "version" : "0.1.0",
+  "name" : "LSPN"
+},
+{
+  "id" : "MedicareNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicarenum",
+  "version" : "0.1.0",
+  "name" : "MedicareNumber"
+},
+{
+  "id" : "MedicareProviderNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum",
+  "version" : "0.1.0",
+  "name" : "MedicareProviderNumber"
+},
+{
+  "id" : "AUHPAI-O",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o",
+  "version" : "0.1.0",
+  "name" : "PAIO"
+},
+{
+  "id" : "AUHPAI-R",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r",
+  "version" : "0.1.0",
+  "name" : "PAIR"
+},
+{
+  "id" : "PBSPrescriberNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/pbsprescribernum",
+  "version" : "0.1.0",
+  "name" : "PBSPrescriberNumber"
+},
+{
+  "id" : "PharmacyApprovalNumber",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/phan",
+  "version" : "0.1.0",
+  "name" : "PHAN"
+},
+{
+  "id" : "RACS",
+  "type" : "NamingSystem",
+  "url" : "http://ns.electronichealth.net.au/fhir/NamingSystem/racs",
+  "version" : "0.1.0",
+  "name" : "RACS"
+}]

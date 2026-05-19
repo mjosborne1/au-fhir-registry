@@ -1,0 +1,69 @@
+AUNSRegistry : Validation Results
+=========================================
+
+err = 0, warn = 8, info = 0
+$--
+Generated $--. FHIR version $-- for hl7.fhir.au.nsreg#$-- (canonical = http://hl7.org.au/fhir/nsreg)
+ Build Errors : 0 / 5 / 0
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/ImplementationGuide-hl7.fhir.au.nsreg : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-ABN : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-ACN : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AHPRANumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-ARBN : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUDeliveryPointIdentifier : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUGNAFIdentifier : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-D : 0 / 2 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-O : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-R : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUNATAAccreditationNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUNATASiteNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-CAEI : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-CSPRegistrationNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-CentrelinkCustomerReferenceNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-DVANumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-HPII : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-HPIO : 0 / 1 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-IHI : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-LSPN : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-MedicareNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-MedicareProviderNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-NPIO : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-PBSPrescriberNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-PharmacyApprovalNumber : 0 / 0 / 1
+ /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-RACS : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.au.nsreg.json ==
+== fsh-generated/resources/NamingSystem-ABN.json ==
+== fsh-generated/resources/NamingSystem-ACN.json ==
+== fsh-generated/resources/NamingSystem-AHPRANumber.json ==
+== fsh-generated/resources/NamingSystem-ARBN.json ==
+== fsh-generated/resources/NamingSystem-AUDeliveryPointIdentifier.json ==
+== fsh-generated/resources/NamingSystem-AUGNAFIdentifier.json ==
+== fsh-generated/resources/NamingSystem-AUHPAI-D.json ==
+WARNING: NamingSystem/AUHPAI-D: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+WARNING: Resource: The URL 'http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o' is also used by HPIO in /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-HPIO
+== fsh-generated/resources/NamingSystem-AUHPAI-O.json ==
+== fsh-generated/resources/NamingSystem-AUHPAI-R.json ==
+== fsh-generated/resources/NamingSystem-AUNATAAccreditationNumber.json ==
+== fsh-generated/resources/NamingSystem-AUNATASiteNumber.json ==
+== fsh-generated/resources/NamingSystem-CAEI.json ==
+== fsh-generated/resources/NamingSystem-CSPRegistrationNumber.json ==
+== fsh-generated/resources/NamingSystem-CentrelinkCustomerReferenceNumber.json ==
+== fsh-generated/resources/NamingSystem-DVANumber.json ==
+== fsh-generated/resources/NamingSystem-HPII.json ==
+== fsh-generated/resources/NamingSystem-HPIO.json ==
+WARNING: Resource: The URL 'http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o' has already been used by AUHPAI-D in /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-D
+== fsh-generated/resources/NamingSystem-IHI.json ==
+== fsh-generated/resources/NamingSystem-LSPN.json ==
+== fsh-generated/resources/NamingSystem-MedicareNumber.json ==
+== fsh-generated/resources/NamingSystem-MedicareProviderNumber.json ==
+== fsh-generated/resources/NamingSystem-NPIO.json ==
+== fsh-generated/resources/NamingSystem-PBSPrescriberNumber.json ==
+== fsh-generated/resources/NamingSystem-PharmacyApprovalNumber.json ==
+== fsh-generated/resources/NamingSystem-RACS.json ==

@@ -1,0 +1,43 @@
+# hl7.fhir.au.nsreg#0.1.0: HL7 AU FHIR Namespace Registry
+
+## Pages
+
+* [Home](index.md)
+* [Artefacts Summary](artifacts.md)
+* [License](license.md)
+* [Downloads](downloads.md)
+* [FHIR Artefacts](fhirartifacts.md)
+
+## Resources
+
+### ImplementationGuides
+
+* [HL7 AU FHIR Namespace Registry](index.md)
+
+### NamingSystems
+
+* [ABN](NamingSystem-ABN.md)
+* [ACN](NamingSystem-ACN.md)
+* [AHPRANumber](NamingSystem-AHPRANumber.md)
+* [ARBN](NamingSystem-ARBN.md)
+* [DPID](NamingSystem-AUDeliveryPointIdentifier.md)
+* [GNAFID](NamingSystem-AUGNAFIdentifier.md)
+* [AustralianPAI-D](NamingSystem-AUHPAI-D.md)
+* [PAIO](NamingSystem-AUHPAI-O.md)
+* [PAIR](NamingSystem-AUHPAI-R.md)
+* [AUNATAAccreditationNumber](NamingSystem-AUNATAAccreditationNumber.md)
+* [AUNATASiteNumber](NamingSystem-AUNATASiteNumber.md)
+* [CAEI](NamingSystem-CAEI.md)
+* [CSPRN](NamingSystem-CSPRegistrationNumber.md)
+* [AustralianCRN](NamingSystem-CentrelinkCustomerReferenceNumber.md)
+* [AustalianDVAFileNumber](NamingSystem-DVANumber.md)
+* [AustralianHPII](NamingSystem-HPII.md)
+* [AustralianHPIO](NamingSystem-HPIO.md)
+* [AustralianIHI](NamingSystem-IHI.md)
+* [LSPN](NamingSystem-LSPN.md)
+* [MedicareNumber](NamingSystem-MedicareNumber.md)
+* [MedicareProviderNumber](NamingSystem-MedicareProviderNumber.md)
+* [NPIO](NamingSystem-NPIO.md)
+* [PBSPrescriberNumber](NamingSystem-PBSPrescriberNumber.md)
+* [PHAN](NamingSystem-PharmacyApprovalNumber.md)
+* [RACS](NamingSystem-RACS.md)

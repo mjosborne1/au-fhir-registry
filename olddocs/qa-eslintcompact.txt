@@ -1,0 +1,14 @@
+AUNSRegistry
+=========================================
+
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-D.json: line 1, col 2818, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))' (INVARIANT)
+/Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-D.json: line 0, col 0, Warning - The URL 'http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o' is also used by HPIO in /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-HPIO (BUSINESSRULE)
+/Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-HPIO.json: line 0, col 0, Warning - The URL 'http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o' has already been used by AUHPAI-D in /Users/osb074/Development/hl7au/au-fhir-registry/fsh-generated/resources/NamingSystem-AUHPAI-D (BUSINESSRULE)
+
+err = 0, warn = 8, info = 0
+IG Publisher Version: 2.2.7

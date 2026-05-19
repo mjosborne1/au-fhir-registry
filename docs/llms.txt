@@ -1,18 +1,15 @@
-# hl7.fhir.au.nsreg#0.1.0: HL7 AU FHIR Namespace Registry
+# hl7.fhir.au.nsregister#0.1.0: HL7 AU FHIR Namespace registry
 
 ## Pages
 
 * [Home](index.md)
-* [Artefacts Summary](artifacts.md)
-* [License](license.md)
-* [Downloads](downloads.md)
-* [FHIR Artefacts](fhirartifacts.md)
+* [Artifacts](artifacts.md)
 
 ## Resources
 
 ### ImplementationGuides
 
-* [HL7 AU FHIR Namespace Registry](index.md)
+* [HL7 AU FHIR Namespace registry](index.md)
 
 ### NamingSystems
 
@@ -22,9 +19,9 @@
 * [ARBN](NamingSystem-ARBN.md)
 * [DPID](NamingSystem-AUDeliveryPointIdentifier.md)
 * [GNAFID](NamingSystem-AUGNAFIdentifier.md)
-* [AustralianPAI-D](NamingSystem-AUHPAI-D.md)
 * [PAIO](NamingSystem-AUHPAI-O.md)
 * [PAIR](NamingSystem-AUHPAI-R.md)
+* [AustralianPAID](NamingSystem-AUHPAID.md)
 * [AUNATAAccreditationNumber](NamingSystem-AUNATAAccreditationNumber.md)
 * [AUNATASiteNumber](NamingSystem-AUNATASiteNumber.md)
 * [CAEI](NamingSystem-CAEI.md)

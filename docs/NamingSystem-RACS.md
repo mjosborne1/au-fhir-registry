@@ -1,8 +1,7 @@
-# Residential Aged Care Service Identifier - HL7 AU FHIR Namespace Registry v0.1.0
+# Residential Aged Care Service Identifier - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Residential Aged Care Service Identifier**
 
 ## NamingSystem: Residential Aged Care Service Identifier 
@@ -41,6 +40,10 @@ Residential Aged Care Service identifier. A RACS ID (also referred to as a resid
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Services Australia",

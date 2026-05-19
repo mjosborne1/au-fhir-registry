@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - HL7 AU FHIR Namespace Registry v0.1.0</title>
+    <title>Home - HL7 AU FHIR Namespace registry v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,13 +68,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HL7 AU FHIR Namespace Registry</span>
+          <p><span style="font-size:12pt;font-weight:bold">HL7 AU FHIR Namespace registry</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
 
 
-  <img alt="Australia flag" src="assets/images/aus.svg" height="16" title="Australia"/>
+  <span title="">AU</span>
 
 
             </span>
@@ -104,28 +104,8 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html">Artifacts</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="license.html">license</a>
-      </li>
-    </ul>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -159,7 +139,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HL7 AU FHIR Namespace Registry - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org.au/fhir/nsreg/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HL7 AU FHIR Namespace registry - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org/au/au-fhir-registry/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -171,10 +151,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org.au/fhir/nsreg/ImplementationGuide/hl7.fhir.au.nsreg|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/au/au-fhir-registry/ImplementationGuide/hl7.fhir.au.nsregister|0.1.0"/></span>
       </td>
     </tr>
 
@@ -190,14 +170,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-05-06
+            as of 2026-05-19
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">AUNSRegistry</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">AUNSRegister</span></td>
     </tr>
 
 
@@ -217,9 +197,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="au-fhir-registry">au-fhir-registry</h1>
+<h1 id="hl7-au-fhir-namespace-registry">HL7 AU FHIR Namespace Registry</h1>
 
-<p>Repository of AU Domain Namespaces as FHIR NamimgSystems</p>
+<p>The HL7 AU FHIR Namespace Registry is a repository of Australian domain namespaces defined as FHIR <a href="https://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a> resources. It provides a centralised, machine-readable catalogue of identifier and code system URIs used across Australian healthcare and related sectors.</p>
+
+<h2 id="purpose">Purpose</h2>
+
+<p>Australian healthcare, government, and business systems use a wide variety of identifier schemes. This registry defines those schemes as FHIR NamingSystems so that implementers can reference authoritative URIs when exchanging FHIR resources.</p>
+
+<h2 id="namingsystems">NamingSystems</h2>
 
 <!-- Use for sorted flat list resources e.g. NamingSystem  allows for highlighting new stuff using include parameter -->
 
@@ -272,7 +258,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
 
     
-          <tr><td><a href="NamingSystem-AUHPAI-D.html">AustralianPAI-D</a></td><td>This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system.</td></tr>
+          <tr><td><a href="NamingSystem-AUHPAID.html">AustralianPAID</a></td><td>This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system.</td></tr>
         
 
     
@@ -349,14 +335,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org.au">HL7 AU Publisher</a>.  Package hl7.fhir.au.nsreg#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 6, 2026 13:53+1000">2026-05-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org.au">HL7 AU Publisher</a>.  Package hl7.fhir.au.nsregister#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 19, 2026 12:05+1000">2026-05-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org.au/fhir/nsreg/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/au/au-fhir-registry/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
 

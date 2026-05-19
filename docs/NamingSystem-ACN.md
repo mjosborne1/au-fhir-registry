@@ -1,8 +1,7 @@
-# Australian Business Number (ACN) - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian Business Number (ACN) - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian Business Number (ACN)**
 
 ## NamingSystem: Australian Business Number (ACN) 
@@ -41,6 +40,10 @@ This identifier identifies an Australian Company Number in an Australian context
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Australian Securities and Investments Commission (ASIC)",

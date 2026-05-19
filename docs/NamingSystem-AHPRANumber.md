@@ -1,8 +1,7 @@
-# Australian Health Practitioner Regulation Agency (AHPRA) Registration Number - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian Health Practitioner Regulation Agency (AHPRA) Registration Number - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian Health Practitioner Regulation Agency (AHPRA) Registration Number**
 
 ## NamingSystem: Australian Health Practitioner Regulation Agency (AHPRA) Registration Number 
@@ -41,6 +40,10 @@ An Australian Health Practitioner Regulation Authority (AHPRA) registration numb
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Services Australia",

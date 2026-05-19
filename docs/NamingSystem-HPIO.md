@@ -1,8 +1,7 @@
-# Australian Healthcare Provider Identifier - Organisation (HPI-O) - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian Healthcare Provider Identifier - Organisation (HPI-O) - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian Healthcare Provider Identifier - Organisation (HPI-O)**
 
 ## NamingSystem: Australian Healthcare Provider Identifier - Organisation (HPI-O) 
@@ -41,6 +40,10 @@ This namespace is used to represent Healthcare Provider Identifier for Organisat
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Australian Digital Health Agency",

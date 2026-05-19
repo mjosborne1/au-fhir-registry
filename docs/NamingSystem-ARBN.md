@@ -1,8 +1,7 @@
-# Australian Registered Body Number (ARBN) - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian Registered Body Number (ARBN) - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian Registered Body Number (ARBN)**
 
 ## NamingSystem: Australian Registered Body Number (ARBN) 
@@ -41,6 +40,10 @@ This identifier identifies a registrable Australian body. Companies must apply t
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Australian Securities and Investments Commission (ASIC)",

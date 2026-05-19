@@ -1,10 +1,9 @@
-# Artefacts Summary - HL7 AU FHIR Namespace Registry v0.1.0
+# Artifacts - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* **Artefacts Summary**
+* **Artifacts**
 
-## Artefacts Summary
+## Artifacts
 
 This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
@@ -25,7 +24,7 @@ These define identifier and/or code system identities used by systems conforming
 | [Australian Healthcare Provider Identifier - Individual (HPI-I)](NamingSystem-HPII.md) | This namespace is used to represent Healthcare Provider Identifier for Individuals (HPI-I) numbers. |
 | [Australian Healthcare Provider Identifier - Organisation (HPI-O)](NamingSystem-HPIO.md) | This namespace is used to represent Healthcare Provider Identifier for Organisations (HPI-O) numbers. |
 | [Australian Individual Healthcare Identifier (IHI)](NamingSystem-IHI.md) | Australian Individual Healthcare Identifier (IHI). An IHI is assigned under the Healthcare Identifiers (HI) Service to a patient. |
-| [Australian My Health Record Assigned Identity - Device (PAI-D) identifier](NamingSystem-AUHPAI-D.md) | This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system. |
+| [Australian My Health Record Assigned Identity - Device (PAI-D) identifier](NamingSystem-AUHPAID.md) | This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system. |
 | [Australian My Health Record Assigned Identity - Organisation (PAI-O) identifier](NamingSystem-AUHPAI-O.md) | This identifier profile defines a My Health Record Assigned Identity - Organisation (PAI-O) identifier in an Australian context. A PAI-O may be issued to organisations who wish to participate in the My Health Record and who are not eligible for a Healthcare Provider Identifier - Organisation (HPI-O). |
 | [Australian My Health Record Assigned Identity - Repository (PAI-R) identifier](NamingSystem-AUHPAI-R.md) | This identifier profile defines a My Health Record Assigned Identity - Repository (PAI-R) identifier in an Australian context. A PAI-R is typically used to identify a conformant repository that plays a role in the exchange of digital health data with the My Health Record system. |
 | [Australian National Association of Testing Authorities (NATA) Accreditation Number](NamingSystem-AUNATAAccreditationNumber.md) | National Association of Testing Authorities (NATA) Accreditation Number is used to identify approved testing laboratories in the Australian context. |

@@ -1,8 +1,7 @@
-# Australian Geocoded National Address File Identifier - HL7 AU FHIR Namespace Registry v0.1.0
+# Australian Geocoded National Address File Identifier - HL7 AU FHIR Namespace registry v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**FHIR Artefacts**](fhirartifacts.md)
-* [**Artefacts Summary**](artifacts.md)
+* [**Artifacts**](artifacts.md)
 * **Australian Geocoded National Address File Identifier**
 
 ## NamingSystem: Australian Geocoded National Address File Identifier 
@@ -41,6 +40,10 @@ Geoscape G-NAF is the geocoded address database for Australian businesses and go
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.hl7.org.au"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@hl7.com.au"
     }]
   }],
   "responsible" : "Geoscape Australia",
