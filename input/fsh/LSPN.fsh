@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#LSPN "Location Specific Practice Number"
 * type.text = "Location Specific Practice Number"
 * description = "Location Specific Practice Number. A Location Specific Practice Number (LSPN) is an identifier assigned to a specific location by Services Australia under the Medicare program and identifies an accredited practice site that provides diagnostic imaging and radiation oncology services."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Diagnostic imaging location identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/lspn"

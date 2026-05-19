@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203#PEN "Pension Number"
 * type.text = "Centrelink Customer Reference Number"
 * description = "Centrelink Customer Reference Number (also referred to as unique identifier number (UIN) in the Centrelink Confirmation eServices (CCeS)). An identifier assigned to an individual by Centrelink for the purposes of identifying people (and organisations) eligible for specific services, including some public health care services, such as oral health services. This number may appear on a Health Care Card, Commonwealth Seniors Health Card, or Pensioner Concession Card."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Australian Centrelink Customer identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"

@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#NRI
 * type.text = "National Repository Identifier"
 * description = "This identifier profile defines a My Health Record Assigned Identity - Repository (PAI-R) identifier in an Australian context. A PAI-R is typically used to identify a conformant repository that plays a role in the exchange of digital health data with the My Health Record system."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Repository Identification" 
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/pcehr/pair/1.0"

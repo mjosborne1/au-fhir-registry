@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#NPIO
 * type.text = "National Provider at Organisation Identifier"
 * description = "A National Provider Identifier at Organisation (NPIO) uniquely identifies an individual practitioner at an organisation using the practitioner’s HPI-I and organisation’s HPI-O to form the NPIO."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Identification of an individual practitioner at an organisation."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://hl7.org.au/id/npio"

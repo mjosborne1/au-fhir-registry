@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#GNAF
 * type.text = "Geocoded National Address File Identifier"
 * description = "Geoscape G-NAF is the geocoded address database for Australian businesses and governments. "
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Address identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://hl7.org.au/id/gnafidentifier"

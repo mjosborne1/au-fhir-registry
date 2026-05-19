@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#DPID
 * type.text = "Australian Delivery Point Identifier"
 * description = "A DPID is a randomly generated, unique 8-digit number, allocated by Australia Post to an address. A DPID enables each delivery point in Australia to be uniquely identified."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Delivery point identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://hl7.org.au/id/dpid"

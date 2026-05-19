@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#PRES
 * type.text = "PBS Prescriber Number"
 * description = "Pharmaceutical Benefits Scheme (PBS) prescriber number. A PBS prescriber number is assigned by Services Australia under the Pharmaceutical Benefits Scheme to practitioners who are approved to prescribe PBS medicines under the National Health Act 1953."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Australian Federal Government funded medication prescribing identifier."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/medicare-prescriber-number"

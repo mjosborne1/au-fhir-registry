@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#CAEI
 * type.text = "Care Agency Employee Identifier"
 * description = "A CAE identifier may be issued to an employee of, or person under contracted arrangement with, a care agency who wishes to participate in the My Health Record."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Care agency employee identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/pcehr/caei/1.0"

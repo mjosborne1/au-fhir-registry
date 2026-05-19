@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203#NI
 * type.text = "IHI"
 * description = "Australian Individual Healthcare Identifier (IHI). An IHI is assigned under the Healthcare Identifiers (HI) Service to a patient."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Patient identification"
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/hi/ihi/1.0"

@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203-au#NOI "National Organisation Identifier"
 * type.text = "National Organisation Identifier"
 * description = "This identifier profile defines a My Health Record Assigned Identity - Organisation (PAI-O) identifier in an Australian context. A PAI-O may be issued to organisations who wish to participate in the My Health Record and who are not eligible for a Healthcare Provider Identifier - Organisation (HPI-O)."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Organisation Identification" 
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/pcehr/paio/1.0"
