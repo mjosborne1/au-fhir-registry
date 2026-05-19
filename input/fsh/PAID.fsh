@@ -1,10 +1,10 @@
-Instance: AUHPAI-D
+Instance: AUHPAID
 InstanceOf: NamingSystem
 Title: "Australian My Health Record Assigned Identity - Device (PAI-D) identifier"
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
-* extension[=].valueUri = "http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o"
-* name = "AustralianPAI-D"
+* extension[=].valueUri = "http://ns.electronichealth.net.au/id/pcehr/paid"
+* name = "AustralianPAID"
 * status = #draft
 * kind = #identifier
 * date = "2015-08-31"
@@ -15,10 +15,9 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Australian Digital Health Agency"
-* type = $v2-0203-ex#NDI "National Device Identifier"
+* type = $v2-0203-au#NDI "National Device Identifier"
 * type.text = "National Device Identifier"
 * description = "This identifier profile defines a My Health Record Assigned Identity - Device (PAI-D) identifier in an Australian context. A PAI-D is typically used to identify a device that plays a role, for example an authoring or observing, in the exchange of digital health data with the My Health Record system."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Device Identification" 
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/pcehr/paid/1.0"

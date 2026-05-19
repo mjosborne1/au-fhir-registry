@@ -1,6 +1,6 @@
-id: hl7.fhir.au-fhir-registry
+id: hl7.fhir.au.nsregister
 canonical: http://hl7.org/au/au-fhir-registry
-name: au-fhir-registry
+name: AUNSRegister
 title:  HL7 AU FHIR Namespace registry
 description: FHIR Namespaces used in the Australian (AU) domain
 status: draft # draft | active | retired | unknown
@@ -12,12 +12,14 @@ license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: "urn:iso:std:iso:3166#AU"
 publisher:
   name: HL7 AU Publisher
-  url: http://hl7.org/au/au-fhir-registry/publisher
+  url: http://www.hl7.org.au
   email: secretary@hl7.com.au
 FSHOnly: false
 pages:
   index.md:
     title: Home
+  artifacts.html:
+    title: Artifacts
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -34,7 +36,33 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  special-url:
+    - http://hl7.org.au/id/abn
+    - http://hl7.org.au/id/arbn
+    - http://hl7.org.au/id/acn
+    - http://hl7.org.au/id/ahpra-registration-number
+    - http://hl7.org.au/id/dpid
+    - http://hl7.org.au/id/gnafidentifier
+    - http://hl7.org.au/id/nata-accreditation
+    - http://hl7.org.au/id/nata-site
+    - http://hl7.org.au/id/npio
+    - http://ns.electronichealth.net.au/id/pcehr/paid
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/caei
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/crn
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/csp
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/dva
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-i
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/hpi-o
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/ihi
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/lspn
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/medicarenum
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/medicareprovidernum
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pai-o
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pai-r
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/pbsprescribernum
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/phan
+    - http://ns.electronichealth.net.au/fhir/NamingSystem/racs
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -48,7 +76,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-#  Artifacts: artifacts.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

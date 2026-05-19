@@ -18,7 +18,6 @@ Usage: #definition
 * type = $v2-0203#MI "Military ID Number"
 * type.text = "Australian Department of Veterans’ Affairs (DVA) file number"
 * description = "Australian Department of Veterans’ Affairs (DVA) file number. An individual’s state-based Department of Veterans’ Affairs (DVA) File number as displayed on a Veteran Card."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Australian Department of Veterans’ Affairs (DVA) patient identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/dva"

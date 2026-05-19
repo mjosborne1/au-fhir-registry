@@ -15,10 +15,8 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#AHPRA "AHPRA Number"
-* type.text = "AHPRA Number"
+* type = $v2-0203-au#AHPRA
 * description = "An Australian Health Practitioner Regulation Authority (AHPRA) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Health practitioner identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://hl7.org.au/id/ahpra-registration-number"

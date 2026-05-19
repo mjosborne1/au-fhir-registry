@@ -15,10 +15,9 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#UPIN "Medicare Provider Number"
+* type = $v2-0203#UPIN
 * type.text = "Medicare Provider Number"
 * description = "Medicare Provider Number. A Medicare provider number is assigned by Services Australia under the Medicare program to practitioners who provide services that are eligible for a Medicare benefit. A practitioner may have more than one Medicare provider number if they deliver health services in different locations or are registered in multiple health professions."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Australian Federal Government funded medical insurance patient identification"
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/medicare-provider-number"

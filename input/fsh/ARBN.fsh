@@ -1,4 +1,4 @@
-Instance: ABRN
+Instance: ARBN
 InstanceOf: NamingSystem
 Title: "Australian Registered Body Number (ARBN)"
 Usage: #definition
@@ -15,7 +15,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Australian Securities and Investments Commission (ASIC)"
-* type = $v2-0203-ex#XX "Organization identifier"
+* type = $v2-0203#XX "Organization identifier"
 * type.text = "Organization identifier"
 * description = "This identifier identifies a registrable Australian body. Companies must apply to Australian Securities and Investments Commission (ASIC) to be issued an ARBN if they wish to operate in Australia. Foreign companies also require an ARBN." 
 * usage = "Organisation identification."

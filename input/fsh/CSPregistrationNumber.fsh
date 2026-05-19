@@ -15,10 +15,9 @@ Usage: #definition
 * contact.telecom.use = #work
 * contact.telecom.rank = 1
 * responsible = "Services Australia"
-* type = $v2-0203#CSPRN "Contracted Service Provider (CSP) Registration Number"
+* type = $v2-0203-au#CSPRN
 * type.text = "CSP Registration Number"
 * description = "A CSP registration number may be issued to organisations who wish to participate in the My Health Record and/or the Healthcare Identifiers Service as a CSP."
-* jurisdiction = urn:iso:std:iso:3166#"AU" "Australia"
 * usage = "Contracted service provider identification."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://ns.electronichealth.net.au/id/hi/csp/1.0"
